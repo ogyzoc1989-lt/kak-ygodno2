@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аудитория 304</title>
+    <link rel="stylesheet" href="cccaedar.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="logo">
+                <strong>ИТ-МОСКВА</strong>
+                <span>Бронирование ресурсов</span>
+            </div>
+            <nav class="nav">
+                <a href="#">Главная</a>
+                <a href="#">Каталог ресурсов</a>
+                <a href="#" class="active">Календарь</a>
+                <a href="#">Мои брони</a>
+            </nav>
+            <div class="user">Полина · Студент</div>
+        </header>
+
+        <div class="title-block">
+            <div class="crumb">КАТАЛОГ / АУДИТОРИЯ 304</div>
+            <h1>Аудитория 304</h1>
+            <p>3 этаж · 30 мест · Проектор, доска, Wi-Fi</p>
+        </div>
+
+        <div class="layout">
+            <aside class="info">
+                <h2>Об аудитории</h2>
+                <p>Пространство для занятий, встреч и проектной работы.</p>
+
+                <div class="meta-item">
+                    <span>Вместимость</span>
+                    <strong>До 30 человек</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Оснащение</span>
+                    <strong>Проектор, доска, Wi-Fi</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Расположение</span>
+                    <strong>3 этаж</strong>
+                </div>
+                <div class="meta-item">
+                    <span>Доступность</span>
+                    <strong>Пн–Пт, 09:00–16:00</strong>
+                </div>
+
+                <h2>Условия бронирования</h2>
+                <p>Шаг выбора — 30 минут.<br>Согласование не требуется.<br>Освободите аудиторию к окончанию брони.</p>
+            </aside>
+
+            <section class="calendar">
+                <div class="cal-top">
+                    <h2 id="weekLabel">16–20 ноября 2026</h2>
+                    <div class="week-btns">
+                        <button type="button" id="prevBtn">&lsaquo; Предыдущая</button>
+                        <button type="button" id="nextBtn">Следующая &rsaquo;</button>
+                    </div>
+                </div>
+
+                <div class="grid" id="grid"></div>
+
+                <div class="bar">
+                    <div>
+                        <div class="bar-time" id="barTime">16 ноября · 10:00 — 11:30</div>
+                        <div class="bar-sub">1 ч 30 мин · Свободно · Без согласования</div>
+                    </div>
+                    <button type="button" class="submit">Забронировать &rarr;</button>
+                </div>
+
+                <div class="legend">
+                    <span><i class="dot free"></i> Свободно — пустые ячейки</span>
+                    <span><i class="dot busy"></i> Занято — серый</span>
+                    <span><i class="dot selected"></i> Выбрано — тёмно-синий</span>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <span>ИТ-Москва · Единый сервис бронирования</span>
+            <a href="#">Помощь и правила</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
